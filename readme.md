@@ -2,10 +2,11 @@
 https://www.python.org/downloads/
 下载并安装最新python
 linux用户可以直接使用安装命令安装最新python
+
 使用命令
 python --version
 验证是否安装了python
-
+---
 程序编写时使用的是python 3.10，Windows10
 作者 南海蒟蒻 https://codingclip.com/user/110
 版本 1.0.0
