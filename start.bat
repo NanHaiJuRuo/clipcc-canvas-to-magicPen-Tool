@@ -1,0 +1,1 @@
+python -i "canvas to magicPen Tool.py"
