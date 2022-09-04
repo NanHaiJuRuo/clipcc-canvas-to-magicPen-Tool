@@ -189,14 +189,13 @@ for spriteid in range(len(jsontxt["targets"]) if isproject else 1):
                     print("\n当前cvs积木不存在，请检查JSON文件里对应积木。\nblockID：%s\nblock内容：%s"%(i,sprite_jsontxtblocks[i]))
         except Exception as transfromError:
             print("\n当前积木转换失败，请检查JSON文件里对应积木。\nblockID：%s\nblock内容：%s\n报错：%s"%(i,sprite_jsontxtblocks[i],transfromError))
+    #若有用到Image模块，则添加支持库
+    if 需要cvsImage支持库:
+        sprite_jsontxt['blocks'].update(cvsImage自定义函数支持库)
     if isproject:
         jsontxt["targets"][spriteid]= sprite_jsontxt
     else:
         jsontxt= sprite_jsontxt
-
-#若有用到Image模块，则添加支持库
-if 需要cvsImage支持库:
-    sprite_jsontxt['blocks'].update(cvsImage自定义函数支持库)
 
 #导出为新文件
 def force_rename(beforepath,afterpath):
