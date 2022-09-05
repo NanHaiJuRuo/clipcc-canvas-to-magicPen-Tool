@@ -1,7 +1,11 @@
 '''
 程序编写时使用的是python 3.10，Windows10
 作者 南海蒟蒻 https://codingclip.com/user/110
+<<<<<<< HEAD
 版本 1.0.3
+=======
+版本 1.0.4
+>>>>>>> 1f8c22d (first commit)
 
 该程序仅供使用，若有bug请反馈。
 若想要避免转换失败造成的损失，请不要删除源文件，除非你确保转换完全是成功的。
@@ -209,8 +213,14 @@ def force_rename(beforepath,afterpath):
 
 print('导出文件中')
 if exportfilepath_suffix=='json':
+<<<<<<< HEAD
     with open(exportfilepath+'ouputing', 'w+',encoding='utf-8') as out:
         out.write(json.dumps(jsontxt))
+=======
+    with open(exportfilepath+'.ouputing', 'w+',encoding='utf-8') as out:
+        out.write(json.dumps(jsontxt))
+    force_rename(exportfilepath+'.ouputing',exportfilepath)
+>>>>>>> 1f8c22d (first commit)
 else:
     nowzippath= exportfilepath+'.ouputing'
     nowjsonname= 'project.json' if isproject else 'sprite.json'
